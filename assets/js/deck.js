@@ -3,7 +3,7 @@
 const suits = ['clubs','hearts','spades', 'diamonds']
 const values = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
 
-function deck() 
+export function deck() 
 {
     const tempDeck = []
     class Card {
@@ -46,4 +46,5 @@ function shuffledDeck(deck) {
 // console.log(shuffledDeck1)
 // console.log(shuffledDeck1.length)
 
-module.exports = {deck}
+// module.exports = {deck}
+

@@ -1,7 +1,11 @@
-const deck = require('./deck')
-const warDeck = deck.deck()
+// const deck = require('./deck')
+import {deck} from './deck.js'
+const warDeck = deck()
+// const warDeck = deck.deck()
 let computerHand = []
 let playerHand = []
+
+const playArea = $('#playArea')
 
 warDeck.map(card => {
     switch(card.value){
@@ -143,5 +147,9 @@ function war(compCards,playerCards){
     }
 }
 
+// $(document).ready(() => {
+//     const playButton = $('<button>')
+//     playArea.append(playButton)
+// })
 deal()
 play()
